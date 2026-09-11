@@ -1,5 +1,8 @@
 <?php
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 $host = getenv('DB_HOST');
 $user = getenv('DB_USERNAME');
 $password = getenv('DB_PASSWORD');
