@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gestion des fiches d'intervention</title>
-<link rel="stylesheet" href="/SWE1/FICHE%20D%27INTERVENTION/assets/css/style.css">
-   <!--   <link rel="stylesheet" href="../assets/css/style.css">-->
+
+<link rel="stylesheet" href="../assets/css/style.css">
 
 </head>
 
