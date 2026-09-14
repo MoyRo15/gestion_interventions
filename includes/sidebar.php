@@ -4,6 +4,13 @@
        session_start();
     }
 ?>
+
+<button class="menu-toggle" onclick="document.querySelector('.sidebar').classList.toggle('active'); document.querySelector('.sidebar-overlay').classList.toggle('active');">
+    ☰
+</button>
+
+<div class="sidebar-overlay" onclick="document.querySelector('.sidebar').classList.remove('active'); this.classList.remove('active');"></div>
+
 <div class="sidebar">
 
     <h2>MENU</h2>
@@ -33,3 +40,14 @@
     </ul>
 
 </div>
+
+<script>
+document.querySelectorAll('.sidebar a').forEach(function(link) {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 800) {
+            document.querySelector('.sidebar').classList.remove('active');
+            document.querySelector('.sidebar-overlay').classList.remove('active');
+        }
+    });
+});
+</script>
