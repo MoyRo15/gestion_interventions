@@ -6,6 +6,8 @@ RUN docker-php-ext-install mysqli
 # Active mod_rewrite
 RUN a2enmod rewrite
 
+RUN echo "output_buffering = On" > /usr/local/etc/php/conf.d/output-buffering.ini
+
 # Copie du projet dans Apache
 COPY . /var/www/html/
 
